@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+:root {
+    --font-primary : 'Open Sans', sans-serif;
+    --color-primary : #2f3535;
+    --font-color : rgb(241, 238, 238);
+    --colot-secondary : #a7e0cd;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    padding: 1rem 2rem;
+    background-color: var(--color-primary);
+    place-items: center;
+}
+header .logo{
+    font-family: var(--font-primary);
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--font-color);
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    place-items: center;
+    margin-left: 2rem;
+}
+nav ul{
+    display: flex;
+  place-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 1.5rem;
+}
+nav ul li a{
+    font-family: var(--font-primary);
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+}
+.container{
+    max-width: 1120px;
+    margin: auto;
+}
+.hero{
+    background-color: var(--colot-secondary);
+}
+.top-section{
+    padding: 5rem 0;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-primary);
+}
+.top-section h1{
+    font-size: 82px;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+.top-section h1 span{
+    color: yellow;
+    font-size: 100px;
+}
+.top-section h3 {
+    padding:1.2rem 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #6e7373;
+}
+.top-section img{
+    width: 350px;
+}
+.about{
+    background-color: #6e7373;
+    color: var(--font-color);
+    font-family: var(--font-primary);
+}
+.line{
+    text-align: center;
+    align-items: center;
+    padding:3rem 2rem;
+}
+.line h1{
+    padding-bottom: 3rem;
+    font-size: 28px;
+}
+.line p{
+    font-weight: 300;
+    font-size: 13px;
+}
+.line-project{
+    padding: 4rem 0;
+    text-align: center;
+}
+.line-project h1{
+    font-family: var(--font-primary);
+    font-size: 32px;
+    padding-bottom: 2rem;
+}
+
+.flex-img{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px; 
+}
+.flex-img img{
+    width: 250px;
+    border-radius: 20px;
+     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.367) ;
+}
+.img1 p{
+    text-align: left;
+    padding: 20px;
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+}
+.kontak{
+    font-family: var(--font-primary);
+    background-color: var(--colot-secondary);
+    padding: 5rem 0;
+}
+.kontak .container h1{
+    text-align: center;
+    font-size:30px;
+    color: var(--color-primary);
+}
+.container form{
+    padding:30px 10rem;
+}
+.container form input[type="email"]{
+    width: 100%;
+    padding: 1em;
+    font-size: 15px;
+    color: var(--color-primary);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.container form input[type="email"]:focus{
+    border: 1px solid var(--color-primary); 
+}
+.container form input[type="email"]:invalid{
+    border: 1px solid crimson; 
+    color: crimson;
+}
+.container form textarea{
+    width: 100%;
+    padding: 1em;
+    font-size: 15px;
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.container form textarea:focus{
+    border: 1px solid var(--color-primary); 
+}
+
+.container form input[type="submit"]{
+   width: 70%;
+   margin: auto;
+   display: block;
+   outline: none;
+   font-family: var(--font-primary);
+   font-weight: 300;
+    cursor: pointer;
+   background-color: var(--color-primary);
+   color: var(--font-color);
+   padding: 0.8rem;
+   border: 1px solid var(--font-color);
+   border-radius: 10px;
+   transition: all 0.5s ease-in-out;
+}
+.container form input[type="submit"]:hover{
+    background-color: var(--colot-secondary);
+    color: var(--color-primary);
+     border: 1px solid var(--color-primary);
+}
+footer{
+    background-color: var(--color-primary);
+}
+.bottom-section{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-section .logo h1{
+    font-family: var(--font-primary);
+    font-size: 36px;
+    color: var(--font-color);
+    letter-spacing: 3px;
+}
+.bottom-section ul li{
+    list-style: none;
+    padding: 0.4rem 0;
+}
+.bottom-section ul li a{
+     font-family: var(--font-primary);
+ text-decoration: none;
+ color: var(--font-color);
+ font-weight: 300;
+}
