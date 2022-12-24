@@ -13,6 +13,7 @@
 }
 
 header{
+    position: relative;
     display: flex;
     padding: 1rem 2rem;
     background-color: var(--color-primary);
@@ -27,6 +28,7 @@ header .logo{
 }
 
 nav {
+    position: relative;
     display: flex;
     place-items: center;
     margin-left: 2rem;
@@ -110,6 +112,7 @@ nav ul li a{
     display: flex;
     justify-content: space-between;
     padding: 100px; 
+    flex-wrap: wrap;
 }
 .flex-img img{
     width: 250px;
@@ -210,4 +213,138 @@ footer{
  text-decoration: none;
  color: var(--font-color);
  font-weight: 300;
+}
+
+@media only screen and (max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        justify-content: space-between;
+    }
+    nav{
+        position: absolute;
+        top: 50px;
+        right:-150px;
+         transition: all 0.5s ease-in-out;
+    }
+    .geser{
+        right: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    header .logo h1{
+        font-size: 13px;
+    }
+    nav ul{
+        display: block;
+        background-color: var(--font-color);
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.305);
+        padding: 20px 0;
+    }
+    nav ul li{
+        margin: 10px 20px;
+    }
+    nav ul li a{
+        color: var(--color-primary);
+        font-size: 12px;
+    }
+    nav ul li a:hover{
+        color: var(--colot-secondary);
+        transition: all 0.3s ease-in-out;
+    }
+    .burger{
+        cursor: pointer;
+    }
+    .burger span:nth-child(1){
+      display: block;
+    background-color: white;
+    width: 20px;
+    height: 3px;
+   margin-bottom: 3px;
+  }
+    .burger span:nth-child(2){
+      display: block;
+    background-color: white;
+    width: 20px;
+    height: 3px;
+   margin-bottom: 3px;
+  }
+    .burger span:nth-child(3){
+      display: block;
+    background-color: white;
+    width: 20px;
+    height: 3px;
+  }
+  .top-section {
+    padding: 2rem 0;
+  }
+  .top-section h1{
+    font-size: 40px;
+  }
+  .top-section h3{
+    font-size: 18px;
+  }
+  .top-section img{
+    width: 200px;
+  }
+  .line h1{
+    font-size: 18px;
+  }
+  .line p{
+    font-size: 12px;
+  }
+  .line-project {
+    padding: 30px;
+  }
+  .line-project h1{
+    font-size: 18px;
+  }
+  .flex-img{
+    padding: 0;
+  }
+  .flex-img img{
+    width: 100px;
+    border-radius: 3px;
+  }
+  .flex-img p{
+    font-size: 12px;
+  }
+  .kontak .container h1{
+    font-size: 18px;
+  }
+  .container form{
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .container form input[type="email"]{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .container form textarea{
+    font-size: 12px;
+    padding-left: 10px;
+  }
+  .bottom-section{
+      padding:30px;
+  }
+ .bottom-section .logo h1{
+        font-size: 20px;
+ }
+ .bottom-section ul li a{
+    font-size: 12px;
+ }
+}
+@media screen and (min-width:600px){
+.container form{
+    width: 100%;
+    padding: 10px 20px;
+  }
+    .flex-img img{
+    width: 120px;
+    border-radius: 3px;
+  }
+  .bottom-section{
+    padding: 30px;
+  }
 }
